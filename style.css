@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: url(img/school.jpg);
+    font-family: 'Tahoma' sans-serif;
+    
+    
+}
+body{
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 320px;
+    margin-top: 320px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39,0.6), transparent);
+    z-index: 100;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3 ease;
+}
+#register{
+    margin-left: 15px;
+}
+.btn .white-btn{
+    background: rgba(255, 2555, 2555, 0.6);
+}
+.btn:hover{
+    background: rgba(255, 2555, 255, 0.4);
+}
+.nav-menu-btn{
+    display: none;
+}
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    z-index: 2;
+}
+.register-container{
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.top span{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+header{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+.form-box{
+    display: block;
+    list-style: none;
+    justify-content: space-between;
+}
+.two-form{
+    display: flex;
+    gap: 10px;
+}
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 2555, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field:hover, input-field:focus{
+    background: rgba(255, 255, 255, 0.3);
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: .3s;
+}
+.submit:hover{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 5px 7px 1px rgba(0,0,0,0.2);
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: smal;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    color: #fff;
+    text-decoration: none;
+}
+.two label:hover{
+    text-decoration: underline;
+}
+@media only screem and (max-width: 768px){
+    .nav-button{
+        display: none;
+    }
+}
+@media only screan and (max-width: 540px){
+    .wrapper{
+        min-height: 100vh;
+    }
+    .fom-box{
+        width: 100%;
+        height: 500px;
+    }
+    .registration-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container .two-form{
+        flex-direction: column;
+        gap: 0;
+    }
+}
