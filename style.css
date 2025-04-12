@@ -40,6 +40,10 @@ body{
     cursor: pointer;
     transition: .3 ease;
 }
+.nav img{
+    cursor: pointer;
+    font-size: 12px;
+}
 #register{
     margin-left: 15px;
 }

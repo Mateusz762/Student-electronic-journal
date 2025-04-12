@@ -19,3 +19,16 @@ function register(){
     x.style.opacity =0;
     y.style.opacity =1;
 }
+//Eye-icon//
+var eye = document.getElementById("eye-icon");
+var password = document.getElementById("password");
+
+eyeicon.onclick = function(){
+    if(password.type == "password"){
+        password.type = "text";
+        eyeicon.src = "eye-icon-open.png";
+    }else{
+        password.type = "password";
+        eyeicon.src = "eye-close.png";
+    }
+}
